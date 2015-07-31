@@ -48,19 +48,33 @@
       </div>
     </nav>
 
-    <div class="container">
+    <div id="map-container" class="container">
+      <img alt="Brand" width="100%" src="./logo.jpg">
+    </div>
+
+    <div id="search-container" class="container">
 
       <form>
         <div class="form-group">
           <div class="row">
-            <div class="col-xs-6 col-md-6">
-              <div class="input-group">
+            <div class="col-xs-7 col-md-7">
+              <div class="input-group input-group-sm">
                 <span class="input-group-addon">Keyword</span>
                 <input name="keywords" type="search" class="form-control" placeholder="keywords" required autofocus>
               </div>
             </div>
-            <div class="col-xs-6 col-md-6">
-              <div class="input-group">
+            <div class="col-xs-5 col-md-5">
+              <div class="input-group input-group-sm">
+                <span class="input-group-addon">From</span>
+                <input name="fromDate" type="date" class="form-control" required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-7 col-md-7">
+              <div class="input-group input-group-sm">
                 <span class="input-group-addon">Location</span>
                 <span class="input-location"><input name="location" type="text" class="form-control" title="a place name, adddress, or zip code" placeholder="place name" required></span>
                 <span class="input-radius"><input name="radius" type="number" class="form-control" title="unit: mile, max: 100 miles" placeholder="radius" required></span>
@@ -71,46 +85,43 @@
                 </span>
               </div>
             </div>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="row">
-            <div class="col-xs-6 col-md-6">
-              <div class="input-group">
-                <span class="input-group-addon">From</span>
-                <input name="fromDate" type="date" class="form-control" placeholder="from date" required>
-              </div>
-            </div>
-            <div class="col-xs-6 col-md-6">
-              <div class="input-group">
+            <div class="col-xs-5 col-md-5">
+              <div class="input-group input-group-sm">
                 <span class="input-group-addon">To</span>
-                <input name="toDate" type="date" class="form-control" placeholder="to date" required>
+                <input name="toDate" type="date" class="form-control" required>
               </div>
             </div>
           </div>
         </div>
         <div class="form-group">
           <div class="row">
-            <div class="col-xs-6 col-md-6">
-              <div class="input-group">
+            <div class="col-xs-8 col-md-8">
+              <div class="input-group input-group-sm">
                 <span class="input-group-addon">View Mode</span>
-                <div class="btn-group" role="group">
-                  <button type="button" class="btn btn-default">Image</input>
-                  <button type="button" class="btn btn-default">Text</button>
-                  <button type="button" class="btn btn-primary">Both</button>
+                <div class="btn-group btn-group-sm" data-toggle="buttons">
+                  <label class="btn btn-info">
+                    <input type="radio" name="search-viewMode" id="image" autocomplete="off"> Image
+                  </label>
+                  <label class="btn btn-info">
+                    <input type="radio" name="search-viewMode" id="text" autocomplete="off"> Text
+                  </label>
+                  <label class="btn btn-info active">
+                    <input type="radio" name="search-viewMode" id="both" autocomplete="off" checked> Both
+                  </label>
                 </div>
               </div>
             </div>
-            <div class="col-xs-6 col-md-6">
-              <div class="input-group">
-                
+            <div class="col-xs-4 col-md-4">
+              <div class="btn-group btn-group-sm pull-right" role="group">
+                <button class="btn btn-default">Clear</button>
+                <button type="submit" class="btn btn-primary">Search</button>
               </div>
             </div>
           </div>
         </div>
       </form>
 
-    </div> <!-- /container -->
+    </div> <!-- /search-container -->
 
 
     <!-- Bootstrap core JavaScript
