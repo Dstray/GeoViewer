@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -50,15 +50,65 @@
 
     <div class="container">
 
-      <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="../../components/#navbar" role="button">View navbar docs &raquo;</a>
-        </p>
-      </div>
+      <form>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+              <div class="input-group">
+                <span class="input-group-addon">Keyword</span>
+                <input name="keywords" type="search" class="form-control" placeholder="keywords" required autofocus>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-6">
+              <div class="input-group">
+                <span class="input-group-addon">Location</span>
+                <span class="input-location"><input name="location" type="text" class="form-control" title="a place name, adddress, or zip code" placeholder="place name" required></span>
+                <span class="input-radius"><input name="radius" type="number" class="form-control" title="unit: mile, max: 100 miles" placeholder="radius" required></span>
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button" title="select a area by drawing a polygon on the map"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></button>
+                  <button class="btn btn-default" type="button" title="select a area by drawing a rectangle on the map"><span class="glyphicon glyphicon-stop" aria-hidden="true"></span></button>
+                  <button class="btn btn-default" type="button" title="remove any areas"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></button>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+              <div class="input-group">
+                <span class="input-group-addon">From</span>
+                <input name="fromDate" type="date" class="form-control" placeholder="from date" required>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-6">
+              <div class="input-group">
+                <span class="input-group-addon">To</span>
+                <input name="toDate" type="date" class="form-control" placeholder="to date" required>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="row">
+            <div class="col-xs-6 col-md-6">
+              <div class="input-group">
+                <span class="input-group-addon">View Mode</span>
+                <div class="btn-group" role="group">
+                  <button type="button" class="btn btn-default">Image</input>
+                  <button type="button" class="btn btn-default">Text</button>
+                  <button type="button" class="btn btn-primary">Both</button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-6 col-md-6">
+              <div class="input-group">
+                
+              </div>
+            </div>
+          </div>
+        </div>
+      </form>
 
     </div> <!-- /container -->
 
