@@ -1,17 +1,21 @@
 body {
-  min-width: 960px;
-  min-height: 2000px;
   padding-top: 50px;
+  min-width: 900px;
+  cursor: auto;
 }
 #map-container {
   position: fixed;
+  padding-left: 0px;
+  padding-right: 0px;
   float: left;
   width: 40%;
+  min-width: 40%;
 }
-#search-container {
+#main-container {
   float: right;
   padding-top: 20px;
   width: 60%;
+  min-width: 560px;
 }
 .input-location {
   float: left;
