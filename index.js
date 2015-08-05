@@ -6,6 +6,11 @@ $(function() {
     }).height(
     	$( window ).height() - 50
     );
+    $('.grid').masonry({
+	    itemSelector: '.grid-item',
+	    columnWidth: '.grid-sizer',
+	    percentPosition: true
+  	});
 });
 
 $( window ).resize( function() {

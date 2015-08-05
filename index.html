@@ -27,6 +27,12 @@
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
+          <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
           <a class="navbar-brand" href="#">
             <img class="pull-left" alt="Brand" width="20" height="20" src="./logo.jpg">
             <span>&nbspGeoViewer</span>
@@ -57,9 +63,9 @@
 
     <div id="main-container" class="container">
 
-      <form>
-        <div class="form-group">
-          <div class="row">
+      <div id="searchMenu">
+        <form>
+          <div class="row form-group">
             <div class="col-xs-7 col-md-7">
               <div class="input-group input-group-sm">
                 <span class="input-group-addon">Keyword</span>
@@ -73,9 +79,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <div class="row">
+          <div class="row form-group">
             <div class="col-xs-7 col-md-7">
               <div class="input-group input-group-sm">
                 <span class="input-group-addon">Location</span>
@@ -95,9 +99,7 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <div class="row">
+          <div class="row form-group">
             <div class="col-xs-8 col-md-8">
               <div class="input-group input-group-sm">
                 <span class="input-group-addon">View Mode</span>
@@ -121,8 +123,81 @@
               </div>
             </div>
           </div>
+          <div class="row form-group">
+            <div class="col-xs-12 col-md-12">
+              <span class="pull-right"><h7>————————————————————————————————@Dstray</h7></span>
+            </div>
+          </div>
+        </form>
+        <p></p>
+      </div>
+
+      <ul id="searchToolbar" class="nav navbar-nav">
+        <li><a href="#">Total Tweets: <span class="badge">0</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-option-vertical" aria-hidden="true"></span> Analysis
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="active">Top Media</a></li>
+            <li><a>Top Retweet</a></li>
+            <li><a>Top URL</a></li>
+          </ul>
+        </li>
+        <li style="display:none"><a href="#"><span class="caret"></span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> Newest First
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="active"><span class="glyphicon glyphicon-sort-by-attributes-alt" aria-hidden="true"></span> Newest First</a></li>
+            <li><a><span class="glyphicon glyphicon-sort-by-attributes" aria-hidden="true"></span> Oldest First</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+            <span class="glyphicon glyphicon-play" aria-hidden="true"></span> Realtime
+            <span class="caret"></span>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="active"><span class="glyphicon glyphicon-play" aria-hidden="true"></span> Realtime</a></li>
+            <li><a><span class="glyphicon glyphicon-pause" aria-hidden="true"></span> Pause</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh Every 1 min</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a><span class="glyphicon glyphicon-refresh" aria-hidden="true"></span> Refresh Every 25 tweets</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div id="searchResult" class="grid">
+      <div class="grid-sizer"></div>
+        <div class="grid-item">
+          <p>SKJDWOJDWIFJ</p><p>sdfaoj sjdifa jsidf wejwnerw rjweijjsd cj jds fjsoifje f fisojf sief jiefjkdsf jiwoif ksd jfie fjisdjf j fj fjwejfioewfjksd fjie fksdjfiwf foiwejfi</p>
         </div>
-      </form>
+        <div class="grid-item">
+          <p>SKJDWOJDWIFJ</p><p>sdfaoj sjdifa jsidf wejwnerw rjweijjsd cjd fjewifj sjfiefe jds fjsoifje f fisojf sief jiefjkdsf jiwoif ksd jfie fjisdjf j fj fjwejfioewfjksd fjie fksdjfiwef sdjf je fmsd fjef sd fjewifjowfjwfwe f foiwejfi</p>
+        </div>
+        <div class="grid-item">
+          <p>SKJDWOJDWIFJ</p><p>sdfaoj sjdifa jsidf wejwnerw fjewifj sjfiefe jds fjsoifje f fisojf sief jiefjkdsf jiwoif ksd jfie fjisdjf j fj fjwejfioewfjksd fjie fksdjfiwef sdjfwfwe f foiwejfi</p>
+        </div>
+        <div class="grid-item">
+          <p>SKJDWOJDWIFJ</p><p>sdfaoj sjdifa jsidf wejwnerw rjweijjsd cjd fjewifj sjfiefe jds fjsoifje f fisojf sief jiefjkdsf jiwoif ksd jfie fjisdjf j fj fjwejfioewfjksd fjie fksdjfiwef sdjf je fmsd fjef sd fjewifjowfjwfwe f foiwejfi</p>
+        </div>
+        <div class="grid-item">
+          <p>SKJDWOJDWIFJ</p><p>sdfaoj sjdifa jsidf wejwnerw rjd cjd fjewifj sjfiefe jds fjsoifje f fisojf sief jiefjkdsf jiwoif ksd jfie fjisdjf j fj fjwejfioewfjksd fjie fksdjfiwef sdjf je fmsd fjef sd fjewifjowfjwfwe f foiwejfi</p>
+        </div>
+        <div class="grid-item"><p>e jds fjsoifje f fisojf sief jiefjkdsf jiwoif ksd jfie fjisdjf j fj fjwejfioewfjksd fjie fksdjfiwef sdjf je fmsd fjef sd fjewifjowfjwfwe f foiwejfi</p>
+        </div>
+        <div class="grid-item">
+          <p>SKJDWOJDWIFJ</p><p>sdfaoj sjdifa jsidf wejwnerw rjweijjsd cjd fjewifj sjfiefe jds fjsoifje f fisojf sief jiefjkdsf jiwoif ksd jfie fjisdjf j fj fjwejfioewfjksd fjie fksdjfiwef sdjf je fmsd fjef sd fjewifjowfjwfwe f foiwejfi</p>
+        </div>
+        <div class="grid-item">
+          <p>SKJDWOJDWIFJ</p><p>sdfaoj sjdifa jsidf wejwnerw rjweijjsd cjd fjewifjf jiefif ksd jfie fjisdjf j fj fjwejfioewfjksd fjie fksdjfiwef sdjf je fmsd fjef sd fjewifjowfjwfwe f foiwejfi</p>
+        </div>
+      </div>
 
     </div> <!-- /main-container -->
 
@@ -132,6 +207,8 @@
     <script src="./bootstrap/3.3.5/js/bootstrap.min.js"></script>
     <!-- JQuery UI -->
     <script src="./jquery/ui/jquery-ui.min.js"></script>
+    <!-- Masonry -->
+    <script src="./jquery/masonry.pkgd.min.js"></script>
 
     <!-- Custom styles for this webpage -->
     <script src="./index.js"></script>
