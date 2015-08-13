@@ -1,45 +1,17 @@
+
+<html>
+  <body>
+    <form name="test" action="http://api.eventful.com/rest/events/search" method="post">
+      <label><input type="text" name="app_key" value="sPzLhSbLMsXN9s8w"></label>
+      <label>Keywords: <input type="text" name="keywords" value="books"></label>
+      <label>Location: <input type="text" name="location" value="San Diego"></label>
+      <label>Date: <input type="text" name="date" value="2012042500-2012042700"></label>
+      <input type="submit" value="Search">
+    </form>
+  </body>
+</html>
 <!--
 <form name="test" action="http://api.eventful.com/rest/events/search?app_key=sPzLhSbLMsXN9s8w&keywords=books&location=San+Diego&date=Future" method="post">
   <input type="submit" value="Go">
-</form>-->
-<html>
-
-Javascript Sample page <br>
-
-<script type="text/javascript" src="http://api.eventful.com/js/api"></script>
-
-<script type="text/javascript">
-function show_alert()
-{
-  var oArgs = {
-            app_key:"sPzLhSbLMsXN9s8w&keywords",
-            id: "20218701",
-            page_size: 25 ,
-  };
-  EVDB.API.call("/events/get", oArgs, function(oData) {
-      // Note: this relies on the custom toString() methods below
-    });
-}
-
-function show_alert2()
-{
-   var oArgs = {
-      app_key: "sPzLhSbLMsXN9s8w&keywords",
-      q: "music",
-      where: "San Diego", 
-      "date": "2013061000-2015062000",
-      page_size: 5,
-      sort_order: "popularity",
-   };
-   EVDB.API.call("/events/search", oArgs, function(oData) {
-      // Note: this relies on the custom toString() methods below
-    });
-}
-</script>
-
-  <body>
-    Run Sample api searches <br><br>
-    <input type="button" onclick="show_alert()" value="Query #1 " /> <br>
-    <input type="button" onclick="show_alert2()" value="Query #2 " /> <br>
-  </body>
-</html>
+</form>
+-->
